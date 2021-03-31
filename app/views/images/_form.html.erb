@@ -20,14 +20,14 @@
     <div class="controls">
       <%= f.text_field :name, :class => 'form-control' %>
     </div>
-    <%%= f.error_span(:<%= @image[:name] %>) %>
+    <%= f.error_span(:name) %>
   </div>
   <div class="control-group">
     <%= f.label :picture, :class => 'control-label' %>
     <div class="controls">
       <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
     </div>
-    <%%= f.error_span(:<%= @image[:picture] %>) %>
+    <%= f.error_span(:picture) %>
   </div>
 
 
